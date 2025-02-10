@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyBites - Your Weight Loss Recipe Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">HealthyBites</div>
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#recipes">
+                    <i class="fas fa-utensils"></i>
+                    Recipes
+                </a>
+            </li>
+            <li>
+                <a href="#meal-planner">
+                    <i class="fas fa-calendar-alt"></i>
+                    Planner
+                </a>
+            </li>
+            <li>
+                <a href="#favorites">
+                    <i class="fas fa-heart"></i>
+                    Favorites
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="pull-to-refresh">
+        <i class="fas fa-sync-alt"></i>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Healthy, Low-Calorie Recipes</h1>
+                <p>Your journey to a healthier lifestyle starts here</p>
+                <div class="search-container">
+                    <input type="text" id="recipe-search" placeholder="Search for healthy recipes...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <h2>Recipe Categories</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="breakfast">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Breakfast</h3>
+                    <span class="recipe-count">12 recipes</span>
+                </div>
+                <div class="category-card" data-category="lunch">
+                    <i class="fas fa-hamburger"></i>
+                    <h3>Lunch</h3>
+                    <span class="recipe-count">15 recipes</span>
+                </div>
+                <div class="category-card" data-category="dinner">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Dinner</h3>
+                    <span class="recipe-count">18 recipes</span>
+                </div>
+                <div class="category-card" data-category="snacks">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Snacks</h3>
+                    <span class="recipe-count">8 recipes</span>
+                </div>
+                <div class="category-card" data-category="smoothies">
+                    <i class="fas fa-blender"></i>
+                    <h3>Smoothies</h3>
+                    <span class="recipe-count">10 recipes</span>
+                </div>
+                <div class="category-card" data-category="desserts">
+                    <i class="fas fa-cookie"></i>
+                    <h3>Healthy Desserts</h3>
+                    <span class="recipe-count">6 recipes</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipes" class="recipes">
+            <h2>Featured Recipes</h2>
+            <div class="recipe-grid" id="recipe-grid">
+                <!-- Recipes will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="meal-planner" class="meal-planner">
+            <h2>Weekly Meal Planner</h2>
+            <div class="planner-grid">
+                <!-- Meal planner will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HealthyBites</h3>
+                <p>Your companion for healthy living</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#meal-planner">Meal Planner</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HealthyBites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html> 
